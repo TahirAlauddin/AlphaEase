@@ -129,7 +129,8 @@ class Ui_MainWindow(object):
         self.headerLabel.setStyleSheet("font: 125 18pt \"Montserrat\";\n"
 "font: 81 16pt \"Montserrat\";\n"
 "padding: 10px;\n"
-"background: rgb(255, 131, 30)")
+"background: rgb(255, 131, 30);\n"
+"background-color: rgb(0, 170, 255);")
         self.headerLabel.setAlignment(QtCore.Qt.AlignCenter)
         self.headerLabel.setObjectName("headerLabel")
         self.gridLayout.addWidget(self.headerLabel, 0, 0, 1, 2)
@@ -168,11 +169,12 @@ class Ui_MainWindow(object):
         self.submitBtn.setStyleSheet("QPushButton {\n"
 "color: black;\n"
 "background-color: rgb(97, 255, 155);\n"
-"background-color: rgb(255, 119, 56)\n"
+"background-color: rgb(255, 119, 56);\n"
+"background-color: rgb(0, 170, 255);\n"
 "}\n"
 "\n"
 "QPushButton::hover {\n"
-"background-color: rgb(255, 99, 26);\n"
+"background-color: rgb(0, 149, 200);\n"
 "}\n"
 "\n"
 "QPushButton::clicked {\n"
@@ -206,4 +208,4 @@ class Ui_MainWindow(object):
         self.headerLabel.setText(_translate("MainWindow", "Welcome to My APP"))
         self.label.setText(_translate("MainWindow", "License Key"))
         self.submitBtn.setText(_translate("MainWindow", "Submit"))
-
+import resources_rc

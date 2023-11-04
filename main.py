@@ -4,11 +4,11 @@ from PyQt5.QtGui import QIcon
 from ui_main import Ui_MainWindow
 import ctypes
 
-myappid = 'tahiralauddin.prank-app.1.0.0' # arbitrary string
+myappid = 'tahiralauddin.alpha-ease.1.0.0' # arbitrary string
 ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
 
-class PrankApp(QMainWindow):
+class AlphaEaseApp(QMainWindow):
 
     def __init__(self):
         super().__init__()
@@ -22,7 +22,7 @@ class PrankApp(QMainWindow):
         self.ui.setupUi(self)
 
 
-        self.setWindowTitle("Prank App")
+        self.setWindowTitle("Alpha Ease App")
         self.setWindowIcon(QIcon("logo.png"))
         self.ui.submitBtn.clicked.connect(self.validate_license)
 
@@ -49,7 +49,7 @@ class PrankApp(QMainWindow):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    window = PrankApp()
+    window = AlphaEaseApp()
     window.show()
     sys.exit(app.exec_())
 

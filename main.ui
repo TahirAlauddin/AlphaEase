@@ -146,7 +146,8 @@ background: #F2F2F2</string>
        <string notr="true">font: 125 18pt &quot;Montserrat&quot;;
 font: 81 16pt &quot;Montserrat&quot;;
 padding: 10px;
-background: rgb(255, 131, 30)</string>
+background: rgb(255, 131, 30);
+background-color: rgb(0, 170, 255);</string>
       </property>
       <property name="text">
        <string>Welcome to My APP</string>
@@ -232,11 +233,12 @@ background: rgb(255, 131, 30)</string>
           <string notr="true">QPushButton {
 color: black;
 background-color: rgb(97, 255, 155);
-background-color: rgb(255, 119, 56)
+background-color: rgb(255, 119, 56);
+background-color: rgb(0, 170, 255);
 }
 
 QPushButton::hover {
-background-color: rgb(255, 99, 26);
+background-color: rgb(0, 149, 200);
 }
 
 QPushButton::clicked {
