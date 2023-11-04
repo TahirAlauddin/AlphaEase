@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>674</width>
+    <height>421</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">* {
+background: white;
+color: black;
+border: none;
+	font: 11pt &quot;Manrope&quot;;
+}
+
+QLineEdit {
+padding: 5px;
+border: 1px solid lightgrey;
+border-radius: 5px;
+}
+
+
+/* QPushButton styling */
+QPushButton {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 5px 15px;
+    font-size: 14px;
+    background-color: #e7e7e7;
+    color: #333;
+}
+
+QPushButton:hover {
+    background-color: #d4d4d4;
+}
+
+QPushButton:pressed {
+    background-color: #b5b5b5;
+}
+
+QPushButton[style=&quot;accent&quot;] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+}
+
+/* QCheckBox styles */
+QCheckBox::indicator:unchecked {
+    border: 1px solid #aaa;
+    background: white;
+}
+
+QCheckBox::indicator:checked {
+    image: url(checked_icon_path.png);
+}
+
+/* QRadioButton styles */
+QRadioButton::indicator:unchecked {
+    border: 1px solid #aaa;
+    background: white;
+}
+
+QRadioButton::indicator:checked {
+    image: url(radio_checked_icon_path.png);
+}
+
+/* QTabWidget styles */
+QTabWidget::pane {
+    border: 1px solid #aaa;
+}
+
+QTabWidget::tab-bar {
+    alignment: center;
+}
+
+QTabWidget QTabButton {
+    padding: 5px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background: #f5f5f5;
+}
+
+QTabWidget QTabButton:selected {
+    background: #e7e7e7;
+}
+
+/* QComboBox */
+QComboBox {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 5px;
+    background: #f5f5f5;
+}
+
+QComboBox::down-arrow {
+    image: url(dropdown_arrow_icon_path.png);
+}
+
+
+#submitBtn {
+background-color: #22733F;
+color: white;
+}
+
+#logoBtn {
+background: none;
+border: none;
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout" rowstretch="1,1,1,1,0" columnstretch="2,3" rowminimumheight="0,0,0,0,0">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="4" column="0" colspan="2">
+     <widget class="QLabel" name="footerLabel">
+      <property name="styleSheet">
+       <string notr="true">padding-left: 10px;
+background: #F2F2F2</string>
+      </property>
+      <property name="text">
+       <string>Copyright (C) 2023</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QLabel" name="headerLabel">
+      <property name="styleSheet">
+       <string notr="true">font: 125 18pt &quot;Montserrat&quot;;
+font: 81 16pt &quot;Montserrat&quot;;
+padding: 10px;
+background: rgb(255, 131, 30)</string>
+      </property>
+      <property name="text">
+       <string>Welcome to My APP</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="logoBtn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>logo.png</normaloff>logo.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>200</width>
+        <height>300</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout" stretch="2,2,1,1">
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">font-size: 18pt</string>
+         </property>
+         <property name="text">
+          <string>License Key</string>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="minimumSize">
+          <size>
+           <width>250</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>300</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QPushButton" name="submitBtn">
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+color: black;
+background-color: rgb(97, 255, 155);
+background-color: rgb(255, 119, 56)
+}
+
+QPushButton::hover {
+background-color: rgb(255, 99, 26);
+}
+
+QPushButton::clicked {
+
+background-color: rgb(255, 99, 26);
+}</string>
+         </property>
+         <property name="text">
+          <string>Submit</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../Loote/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

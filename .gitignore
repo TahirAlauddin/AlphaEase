@@ -1,0 +1,18 @@
+# INstallers
+*-cache
+*SetupFiles
+dist
+build
+
+# CACHE
+__pycache__
+*.__pycache__
+
+# Archives 
+*.zip
+
+
+# Others
+*.spec
+*.aip
+
