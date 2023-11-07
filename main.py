@@ -4,7 +4,7 @@ from PyQt5.QtGui import QIcon
 from ui_main import Ui_MainWindow
 import ctypes
 
-myappid = 'tahiralauddin.alpha-ease.1.0.0' # arbitrary string
+myappid = 'tahiralauddin.alpha-ease.1.0.1' # arbitrary string
 ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
 
@@ -41,7 +41,7 @@ class AlphaEaseApp(QMainWindow):
             "WERQ-4321-TYUI-9876",
             "GHVB-7890-POIN-1234",
         ]:  # Example check, replace with your actual validation logic
-            QMessageBox.critical(self, "Error", "Your computer is Incompatible!")
+            QMessageBox.critical(self, "Error", "Device not compatible: Keyboard is not permitted for license activation.")
 
         else:
             QMessageBox.critical(self, "Error", "Invalid License Key!")
